@@ -2,8 +2,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
 
 data_ciudades = pd.read_csv('Population of all US Cities 2024.csv')
 
@@ -49,22 +47,5 @@ plt.ylabel('Poblacion 2024')
 plt.show()
 
 
-# Incrementos en la poblacion en las ciudades mas grandes,Aqui hicimos un analisis mas profundo
-Top_Crecimientos_cd = data_ciudades.nlargest(10, 'Annual Change')
-print(Top_Crecimientos_cd)
-
-# Predicciones Futuras para la poblacion con machine learning
-X = data_ciudades[['Population 2020']]
-y = data_ciudades['Population 2024']
-X_train, X_test, y_train, y_test = train_test_split(X, y,
-                                                    test_size=0.2, random_state=42)
 
 
-print(X_train.shape)
-print(y_train.shape)
-
-
-model = LinearRegression()
-model.fit(X_train, y_train)
-predictions = model.predict(X_test)
-print(predictions)
