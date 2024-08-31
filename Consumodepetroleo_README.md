@@ -1,11 +1,11 @@
 # Análisis de Consumo de Petróleo por País (1965-2023)
 
-Este proyecto analiza el consumo de petróleo por país desde 1965 hasta 2023. realizo un análisis descriptivo y propongo un modelo de regresión lineal para predecir el consumo de petróleo en 2023 con los datos de 2022.
+Este proyecto analiza el consumo de petróleo por país desde 1965 hasta 2023. realizo un análisis descriptivo
 
 ## Contenido
 
 - `Oil Consumption by Country 1965 to 2023.csv`: Archivo de datos.
-- `analysis.py`: Código para el análisis y el modelo de machine learning.
+- `analysis.py`: Código para el análisis 
 - `README.md`: Este archivo.
 
 ## Requisitos
@@ -14,17 +14,12 @@ Este proyecto analiza el consumo de petróleo por país desde 1965 hasta 2023. r
 - Pandas
 - Matplotlib
 - Seaborn
-- Scikit-learn
 
 ## Instrucciones
 
 1. Clonar este repositorio.
-2. Instalar las dependencias: `pip install pandas matplotlib seaborn scikit-learn`.
-3. Ejecutar el script `analysis.py` para realizar el análisis y entrenar el modelo.
-
-## Resultados
-
-El modelo de regresión lineal ha logrado un \( R^2 \) de aproximadamente 0.999, lo que indica una alta capacidad de predicción.
+2. Instalar las dependencias: `pip install pandas matplotlib seaborn`.
+3. Ejecutar el script `analysis.py` para realizar el análisis
 
 ## Visualizaciones
 
